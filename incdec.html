@@ -1,0 +1,49 @@
+<html>
+    <head>
+    <title>increment and decrement of number</title>
+    
+        <style>
+            .button
+            {
+                border-radius: 100%;
+            font-size:xx-large;
+            color:black;
+            
+            }
+            .button1{margin-left: 300px;
+            background-color: rgb(243, 44, 84);}
+            .button2{margin-right: 50px;
+            background-color: rgb(26, 182, 26);}
+
+        </style>
+        </head>
+        
+        <body style="background-image:linear-gradient(to right,red,orange,yellow,green,blue,indigo,violet);">
+            
+            <h1 style="font-family:cursive"><strong>Increment and Decrement of a number</strong></h1>
+            <hr style="border: 1px solid black;">
+            <h3>Click (-) button to decrement the number<br>
+            Click (+) button to increment the number</h3>
+            
+         <button class="button button1" onclick="myFunction()">-</button>
+
+         <input type="number"id="myNumber">
+         <button class="button button2" onclick="myFunction1()">+</button>
+    
+        <script>
+         function myFunction()
+        {
+            document.getElementById("myNumber").stepDown();
+        }
+         </script>
+         <script>
+        function myFunction1()
+        {
+            document.getElementById("myNumber").stepUp();
+        }
+         </script>
+         
+         </body>
+         
+
+</html>
